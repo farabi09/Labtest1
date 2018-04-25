@@ -20,6 +20,10 @@
         <h:outputText value="Name:"></h:outputText>
         <h:inputText id="labelStudentName" value="#{studentController.student.studentName}"></h:inputText>
     </h:outputLabel>
+    <h:outputLabel for="labelStudentAddress">
+        <h:outputText value="Address:"></h:outputText>
+        <h:inputText  id="labelStudentAddress" value="#{studentController.student.studentAddress}"></h:inputText>
+    </h:outputLabel>
 
     <h:commandButton value="Add Student" action="#{studentController.isNextPage}"></h:commandButton>
 </h:form>
